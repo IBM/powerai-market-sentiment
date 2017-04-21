@@ -95,6 +95,10 @@ Take note of the URL provided. Use this link to access the notebook.
 Proceed to the provided notebook URL and click on the
 ``Clean_Energy_Watson_V1.0.ipynb`` link to start the Jupyter notebook.
 
+![](doc/source/images/jupyter-nb-contents.png)
+
+![](doc/source/images/nb-start-page.png)
+
 ## 4. Analyze the results
 
 ## 5. Save and Share
