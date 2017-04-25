@@ -23,15 +23,12 @@ not have an abundance of time or data science experience.
 ## Included components
 
 * [IBM Watson Tone Analyzer](https://www.ibm.com/watson/developercloud/tone-analyzer.html): A Bluemix service that uses linguistic analysis to detect communication tones in written text.
-
 * [IBM Power AI](https://www.ibm.com/ms-en/marketplace/deep-learning-platform): A software platform that includes the most popular machine learning frameworks with IBM Power Systems.
-
 * [Nimbix Cloud Computing Platform](https://www.nimbix.net/): An HPC & Cloud Supercomputing platform enabling engineers, scientists & developers, to build, compute, analyze, and scale simulations in the cloud
 
 ## Featured technologies
 
 * [Data Science](https://medium.com/ibm-data-science-experience): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
-
 * [Tensorflow](https://www.tensorflow.org/): An open source software library for numerical computation using data flow graphs.
 
 # Steps
