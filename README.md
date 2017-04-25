@@ -18,7 +18,7 @@ The intended audience for this journey is application developers who need
 to efficiently build powerful deep learning applications, but who may
 not have an abundance of time or data science experience.
 
-NICE ARCHITECTURE DIAGRAM GOES HERE !!!
+![](doc/source/images/architecture.png)
 
 ## Included Components
 
