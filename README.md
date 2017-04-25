@@ -1,4 +1,4 @@
-# powerai-notebook
+# Evaluating predictability of financial markets using New York Times sentiments and market data.
 
 In this developer journey we will use a Jupyter notebook to showcase an
 example of machine learning with time series on IBM Power8 systems. The
@@ -20,24 +20,30 @@ not have an abundance of time or data science experience.
 
 ![](doc/source/images/architecture.png)
 
-## Included Components
+## Included components
 
-* IBM Watson Cognitive Service
-* IBM Power AI / TensorFlow
-* Nimbix Cloud Computing Platform
-* Jupyter Notebooks
-* Python
-* pandas (Python Data Analysis Library)
-* Matplotlib
+* [IBM Watson Tone Analyzer](https://www.ibm.com/watson/developercloud/tone-analyzer.html): A Bluemix service that uses linguistic analysis to detect communication tones in written text.
+
+* [IBM Power AI](https://www.ibm.com/ms-en/marketplace/deep-learning-platform): A software platform that includes the most popular machine learning frameworks with IBM Power Systems.
+
+* [Nimbix Cloud Computing Platform](https://www.nimbix.net/): An HPC & Cloud Supercomputing platform enabling engineers, scientists & developers, to build, compute, analyze, and scale simulations in the cloud
+
+## Featured technologies
+
+* [Data Science](https://medium.com/ibm-data-science-experience): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
+
+* [Tensorflow](https://www.tensorflow.org/): An open source software library for numerical computation using data flow graphs.
 
 # Steps
 
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
-1. [Register for a Nimbix Cloud Platform account](#1-register-for-nimbix)
-2. [Deploy and run the TensorFlow Demo](#2-deploy-tensor-flow-demo)
-3. [Access and start the Jupyter notebook](#3-start-notebook)
+1. [Register for a Nimbix Cloud Platform account](#1-register-for-nimbix-cloud-platform-account)
+2. [Deploy and run the TensorFlow Demo](#2-deploy-and-run-tensorflow-demo)
+3. [Access and start the Jupyter notebook](#3-access-and-start-the-jupyter-notebook)
+4. [Analyze the results](#4-analyze-the-results)
+5. [Save and share](#5-save-and-share)
 
 ## 1. Register for a Nimbix Cloud Platform account
 
@@ -103,7 +109,9 @@ Proceed to the provided notebook URL and click on the
 
 ## 4. Analyze the results
 
-## 5. Save and Share
+**Coming Soon!**
+
+## 5. Save and share
 
 ### How to save your work:
 
@@ -131,11 +139,11 @@ options to specify exactly what you want shared from your notebook:
 
 # Sample output
 
-The following is a sample data visualization with code:
-
-![](doc/source/images/output.png)
-
-For a full example without code see [`data/examples/sample_output.pdf`](data/examples/sample_output.pdf).
+<!--
+The following is a sample data visualization with code
+ ![](doc/source/images/output.png)
+ For a full example without code see [`data/examples/sample_output.pdf`](data/examples/sample_output.pdf).
+-->
 
 # Troubleshooting
 
