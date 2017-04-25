@@ -75,15 +75,17 @@ Using the information obtained from the previous step, launch the server
 session:
 
 * Open a terminal session on the same host that accessed the Nimbix Cloud.
+
 * Enter the following ssh command, substituting the values provided in
 the previous step.
 
-    ssh -L 8888:localhost:8888 nimbix@<server ip addr>
+    ``ssh -L 8888:localhost:8888 nimbix@<server ip addr>``
+
 * When prompted, enter the supplied password.
 
 ![](doc/source/images/nimbix-ssh-session.png)
 
-From the same terminal window, enter the command "ipython notebook" to
+From the same terminal window, enter the command ``ipython notebook`` to
 launch the Jupyter notebook:
 
 ![](doc/source/images/nimbix-launch-notebook.png)
