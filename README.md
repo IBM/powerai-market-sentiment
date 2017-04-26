@@ -22,7 +22,7 @@ not have an abundance of time or data science experience.
 
 ## Included components
 
-* [IBM Watson Tone Analyzer](https://www.ibm.com/watson/developercloud/tone-analyzer.html): A Bluemix service that uses linguistic analysis to detect communication tones in written text.
+* [IBM Watson Natural Language Classifier](https://www.ibm.com/watson/developercloud/nl-classifier.html): A Bluemix service that understands the intent behind text and returns a corresponding classification, complete with a confidence score.
 * [IBM Power AI](https://www.ibm.com/ms-en/marketplace/deep-learning-platform): A software platform that includes the most popular machine learning frameworks with IBM Power Systems.
 * [Nimbix Cloud Computing Platform](https://www.nimbix.net/): An HPC & Cloud Supercomputing platform enabling engineers, scientists & developers, to build, compute, analyze, and scale simulations in the cloud
 
@@ -157,6 +157,7 @@ The graphs and charts produced in this journey attempt to prove that the
 closing value of the Nasdaq Clean Energy Index can be predicted by
 examining various input sources, such as the New York Times and other
 financial markets, both foreign and domestic. These markets include:
+
 - Austrailian Clean Tech Index (asx_cti)
 - Germany DAX (dax_eusdn)
 - UK FTSE100 (ftse-eo100)
