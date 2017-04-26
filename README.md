@@ -22,7 +22,7 @@ not have an abundance of time or data science experience.
 
 ## Included components
 
-* [IBM Watson Natural Language Classifier](https://www.ibm.com/watson/developercloud/nl-classifier.html): A Bluemix service that understands the intent behind text and returns a corresponding classification, complete with a confidence score.
+* [IBM Watson Natural Language Understanding](https://www.ibm.com/watson/developercloud/natural-language-understanding.html): A Bluemix service that can analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles, using natural language understanding.
 * [IBM Power AI](https://www.ibm.com/ms-en/marketplace/deep-learning-platform): A software platform that includes the most popular machine learning frameworks with IBM Power Systems.
 * [Nimbix Cloud Computing Platform](https://www.nimbix.net/): An HPC & Cloud Supercomputing platform enabling engineers, scientists & developers, to build, compute, analyze, and scale simulations in the cloud
 
