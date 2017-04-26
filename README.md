@@ -39,8 +39,9 @@ described in detail below.
 1. [Register for a Nimbix Cloud Platform account](#1-register-for-nimbix-cloud-platform-account)
 2. [Deploy and run the TensorFlow Demo](#2-deploy-and-run-tensorflow-demo)
 3. [Access and start the Jupyter notebook](#3-access-and-start-the-jupyter-notebook)
-4. [Analyze the results](#4-analyze-the-results)
-5. [Save and share](#5-save-and-share)
+4. [Run the notebook](#4-run-the-notebook)
+5. [Analyze the results](#5-analyze-the-results)
+6. [Save and share](#6-save-and-share)
 
 ## 1. Register for a Nimbix Cloud Platform account
 
@@ -104,11 +105,118 @@ Proceed to the provided notebook URL and click on the
 
 ![](doc/source/images/nb-start-page.png)
 
-## 4. Analyze the results
+## 4. Run the notebook
 
-**Coming Soon!**
+When a notebook is executed, what is actually happening is that each code cell in
+the notebook is executed, in order, from top to bottom.
 
-## 5. Save and share
+Each code cell is selectable and is preceded by a tag in the left margin. The tag
+format is `In [x]:`. Depending on the state of the notebook, the `x` can be:
+
+* A blank, this indicates that the cell has never been executed.
+* A number, this number represents the relative order this code step was executed.
+* A `*`, this indicates that the cell is currently executing.
+
+There are several ways to execute the code cells in your notebook:
+
+* One cell at a time.
+  * Select the cell, and then press the `Play` button in the toolbar.
+* Batch mode, in sequential order.
+  * From the `Cell` menu bar, there are several options available. For example, you
+    can `Run All` cells in your notebook, or you can `Run All Below`, that will
+    start executing from the first cell under the currently selected cell, and then
+    continue executing all cells that follow.
+
+Notes:
+
+- Regading cell `[4]`: For the journey we import already collected
+stock market data. This can be done inside the notebook, but requires
+access to private financial websites (such as Bloomberg), which requires
+a subscription fee.
+
+- Regarding cell `[5]`: In an effort to speed up the
+notebook processing time, the New York Times data has already
+been collected and stored in a JSON file, and is imported by the notebook.
+
+- The journey is based on the original Google Cloud Platform example
+documented at https://cloud.google.com/solutions/machine-learning-with-financial-time-series-data.
+The difference between this "IBM Demo" and the original "Google Demo" is noted
+in the two following table:
+
+![](doc/source/images/demo-diffs.png)
+
+## 5. Analyze the results
+
+The result of running the notebook is a report which may be shared with or
+without sharing the code. You can share the code for an audience that wants
+to see how you came your conclusions. The text, code and output/charts are
+combined in a single web page. For an audience that does not want to see
+the code, you can share a web page that only shows text and output/charts.
+
+The graphs and charts produced in this journey attempt to prove that the
+closing value of the Nasdaq Clean Energy Index can be predicted by
+examining various input sources, such as the New York Times and other
+financial markets, both foreign and domestic. These markets include:
+- Austrailian Clean Tech Index (asx_cti)
+- Germany DAX (dax_eusdn)
+- UK FTSE100 (ftse-eo100)
+- UK Credit Suisse (n8wh)
+- US First Trust Nasdaq Clean Edge ETF (qcln and cels)
+- US S&P Global Clean Energy Index (icln and sp_gtced)
+- US Equity Uncertainty Index (dei)
+
+#### Collect Data
+
+The notebook begins by collecting and formatting data:
+
+* Collect and merge 3 years of stock market financial data.
+
+* Collect 3 years of "green energy" articles from the New York
+Times. This data is then feed into the Watson Natural Language Understanding
+service to gather sentiment analysis - specifically by assigning a
+relative positive or negative score to each article.
+
+![](doc/source/images/sentiment-values.png)
+
+#### Analyze Data
+
+The notebook then utilizes EDA (exploratory data analysis) methods to
+find correlations in the data. These findings include:
+
+* Over a 3-year period, there is a correlation between all of the indexes.
+
+![](doc/source/images/3-year-span.png)
+
+* There is a correlation between current values of an index and lagged
+values of the same index.
+
+![](doc/source/images/correlation-data.png)
+
+* There are 2 US indexes (qcln and icln) that correlate with the closing
+values of other indexes available on the same day (i.e. non-US indexes).
+
+![](doc/source/images/scatter-graph.png)
+
+The final analysis from the EDA are as follows:
+- The Austrailian Index close from the same day is a strong predictor
+for the close of the Nasdaq Energy Index.
+- European indices are a significant predictor for the close of the
+Nasdaq Energy Index.
+- Indices from previous days were not a good predictor for the Nasdaq
+Energy Index.
+
+#### Train and Test Data
+
+After determining this correlation in the data, the notebook then
+uses TensorFlow and the IBM PowerAI machine learning framework to train
+and test the data.
+
+After hundreds of thousands of interations over the data using multiple
+models, the notebook is able to achieve a 70% success rate for
+predicting whether the Nasdaq Energy Index would close up or down on any
+given day.
+
+## 6. Save and share
 
 ### How to save your work:
 
