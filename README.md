@@ -143,7 +143,7 @@ been collected and stored in a JSON file, and is imported by the notebook.
 - The journey is based on the original Google Cloud Platform example
 documented at https://cloud.google.com/solutions/machine-learning-with-financial-time-series-data.
 The difference between this "IBM Demo" and the original "Google Demo" is noted
-in the the following table:
+in the following table:
 
 ![](doc/source/images/demo-diffs.png)
 
