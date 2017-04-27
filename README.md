@@ -10,7 +10,7 @@ When the reader has completed this journey, they will understand how to:
 
 * Extract and format structured data from various external sources.
 * Extract and format unstructured data and use IBM Watson cognitive
-services to data sentiment.
+services to extract data sentiment.
 * Build and train Neural Networks.
 * Display and share results in Jupyter notebooks.
 
@@ -43,6 +43,7 @@ described in detail below.
 4. [Run the notebook](#4-run-the-notebook)
 5. [Analyze the results](#5-analyze-the-results)
 6. [Save and share](#6-save-and-share)
+7. [Shut down the TensorFlow Demo](#5-shut-down-demo)
 
 ## 1. Register for a Nimbix Cloud Platform account
 
@@ -142,7 +143,7 @@ been collected and stored in a JSON file, and is imported by the notebook.
 - The journey is based on the original Google Cloud Platform example
 documented at https://cloud.google.com/solutions/machine-learning-with-financial-time-series-data.
 The difference between this "IBM Demo" and the original "Google Demo" is noted
-in the two following table:
+in the the following table:
 
 ![](doc/source/images/demo-diffs.png)
 
@@ -222,27 +223,26 @@ given day.
 
 ### How to save your work:
 
-Under the `File` menu, there are several ways to save your notebook:
+Because this notebook is running temporarily on a Nimbix
+Cloud server, the options to saving and sharing the notebook are limited.
 
-* `Save` will simply save the current state of your notebook, without any version
-  information.
-* `Save Version` will save your current state of your notebook with a version tag
-  that contains a date and time stamp. Up to 10 versions of your notebook can be
-  saved, each one retrievable by selecting the `Revert To Version` menu item.
+Under the `File` menu, there are options to:
 
-### How to share your work:
+* `Download as...` will download the notebook to your local system.
+* `Print Preview` will allow you to print the current state of the
+  notebook.
 
-You can share your notebook by selecting the “Share” button located in the top
-right section of your notebook panel. The end result of this action will be a URL
-link that will display a “read-only” version of your notebook. You have several
-options to specify exactly what you want shared from your notebook:
+## 7. Shut down the TensorFlow demo
 
-* `Only text and output`: will remove all code cells from the notebook view.
-* `All content excluding sensitive code cells`:  will remove any code cells
-  that contain a *sensitive* tag. For example, `# @hidden_cell` is used to protect
-  your dashDB credentials from being shared.
-* `All content, including code`: displays the notebook as is.
-* A variety of `download as` options are also available in the menu.
+After completing the TensorFlow demo, please remember to shutdown the server
+to free up resourses on the Nimbix Cloud Platform.
+
+* From the Nimbix dashboard, select the `TensorFlow-Demo` application
+to show job details.
+
+* Click on the `Shutdown' button and confirm.
+
+![](doc/source/images/nimbix-shutdown.png)
 
 # Sample output
 

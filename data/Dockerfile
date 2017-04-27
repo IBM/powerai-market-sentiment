@@ -1,4 +1,3 @@
-#must be built on a IBM Power8 system
 FROM jarvice/ubuntu-ibm-mldl-ppc64le
 
 #add Jupyter
