@@ -244,9 +244,9 @@ to show job details.
 
 ![](doc/source/images/nimbix-shutdown.png)
 
+<!--
 # Sample output
 
-<!--
 The following is a sample data visualization with code
  ![](doc/source/images/output.png)
  For a full example without code see [`data/examples/sample_output.pdf`](data/examples/sample_output.pdf).
