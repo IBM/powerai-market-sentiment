@@ -47,7 +47,24 @@ described in detail below.
 
 ## 1. Register for a Nimbix Cloud Platform account
 
-Register for Power AI on the [Nimbix Cloud](https://platform.jarvice.com/login-page).
+IBM has partered with Nimbix to provide journey developers a trial
+account that provides 10 hours of free processing time on the PowerAI
+platform.
+
+The sign-up process is as follows:
+
+1) Go to the [IBM Cognitive Journey Demo Registration](https://www.nimbix.net/cognitive-journey)
+page on the Nimbix site and register.
+
+2) Nimbix will email you a confirmation message that will include a
+link to confirm your registration. Click on the provided link within 24
+hours to continue the process.
+
+3) The provided link will take you to a Nimbix registration page where
+you will need to create and confirm your account password.
+
+4) Nimbix will then email you another message that will contain a link to
+activate your account and instructions for logging into Nimbix.
 
 ## 2. Deploy and run TensorFlow demo
 
