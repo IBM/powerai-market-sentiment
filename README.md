@@ -115,8 +115,7 @@ click on ``Submit``:
 
 ![](doc/source/images/tensor-flow-demo-options.png)
 
-    NOTE: Ignore the "$0.43/hr" charge listed. With your trial account you
-    receive 10 hours of free processing time.
+    NOTE: Ignore the "$0.43/hr" charge listed. With your trial account you receive 10 hours of free processing time.
 
 * Once started, the following ``Dashboard`` panel will be displayed. When
 the server ``Status`` turns to ``Processing``, the server is ready to be
@@ -287,7 +286,7 @@ After completing the TensorFlow demo, please remember to shutdown the server
 to free up resourses on the Nimbix Cloud Platform. Also, remember that
 the free trial regisration only provides 10 hours of compute time.
 
-* From the Nimbix ``Dashboard : Current Jobs`` view, click on the
+* From the Nimbix ``Dashboard:Current Jobs`` view, click on the
 ``Shutdown`` button and confirm.
 
 ![](doc/source/images/tensor-flow-demo-kill.png)
