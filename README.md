@@ -37,45 +37,94 @@ not have an abundance of time or data science experience.
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
-1. [Register for a Nimbix Cloud Platform account](#1-register-for-nimbix-cloud-platform-account)
-2. [Deploy and run the TensorFlow Demo](#2-deploy-and-run-tensorflow-demo)
-3. [Access and start the Jupyter notebook](#3-access-and-start-the-jupyter-notebook)
-4. [Run the notebook](#4-run-the-notebook)
-5. [Analyze the results](#5-analyze-the-results)
-6. [Save and share](#6-save-and-share)
-7. [Shut down the TensorFlow Demo](#5-shut-down-demo)
+1. [Register for a Trial Nimbix Cloud Platform account](#1-register-for-a-trial-nimbix-cloud-platform-account)
+2. [Navigating the Nimbix UI](#2-navigating-the-nimbix-ui)
+3. [Deploy and run the TensorFlow Demo](#3-deploy-and-run-the-tensorflow-demo)
+4. [Access and start the Jupyter notebook](#4-access-and-start-the-jupyter-notebook)
+5. [Run the notebook](#5-run-the-notebook)
+6. [Analyze the results](#6-analyze-the-results)
+7. [Save and share](#7-save-and-share)
+8. [Shut down the TensorFlow Demo](#8-shut-down-the-tensorflow-demo)
 
-## 1. Register for a Nimbix Cloud Platform account
+## 1. Register for a Trial Nimbix Cloud Platform account
 
-Register for Power AI on the [Nimbix Cloud](https://platform.jarvice.com/login-page).
+IBM has partnered with Nimbix to provide journey developers a trial
+account that provides 10 hours of free processing time on the PowerAI
+platform.
 
-## 2. Deploy and run TensorFlow demo
+The registration process is as follows:
+
+* Go to the [IBM Cognitive Journey Demo Registration Page](https://www.nimbix.net/cognitive-journey)
+and submit the form to initiate the registration process.
+
+![](doc/source/images/nimbix-registration.png)
+
+* Wait for a confirmation email. Note that this process is not automated so
+it may take up to 24 hours to be reviewed and approved.
+* Once you receive the email, you will have 24 hours to complete the process
+by clicking on the provided link:
+
+![](doc/source/images/nimbix-confirmation-1.png)
+
+* The above link will take you to this page where you need to create and
+confirm your account password:
+
+![](doc/source/images/nimbix-set-password.png)
+
+* Wait for a confirmation email that will will provide instructions
+for logging into Nimbix:
+
+![](doc/source/images/nimbix-registration-complete.png)
+
+* Click the [link](https://mc.jarvice?page=compute&team) to take you to
+the Nimbix login page:
+
+![](doc/source/images/nimbix-login.png)
+
+## 2. Navigating the Nimbix UI
+
+The Nimbix UI has 2 main controls located at the top of the panel.
+
+![](doc/source/images/nimbix-navigation.png)
+
+* Click on ``NIBMIX`` to display a drop-down list of available modes. Click
+again to hide the list. In the example view above, we have selected
+the ``Dashboard`` mode.
+
+* On the left-side, click on the ``collapsable`` icon to display a
+drop-down list of views that are associated with the selected mode.
+Click on the icon again to hide the list. In the example above, we have
+selected the ``Current Jobs`` dashboard view.
+
+## 3. Deploy and run the TensorFlow demo
 
 Once signed into Nimbix, deploy the demo on an IBM Power8 server.
 
-* From the Nimbix dashboard, switch to the ``PushToCompute`` panel and
-click on the ``TensorFlow-Demo`` application:
+* Search for and select the ``tensorflow_demo`` in the list of available apps
+in the ``Compute:All Applications`` view.
 
-![](doc/source/images/nimbix-select-demo.png)
+![](doc/source/images/tensor-flow-select-demo.png)
 
-* From the ``TensorFlow-Demo`` drop-down menu, select option to launch
-server:
+* From the ``tensorflow_demo`` application panel, select the ``Server``
+option:
 
-![](doc/source/images/nimbix-launch-server.png)
+![](doc/source/images/tensor-flow-demo-page.png)
 
-* Confirm all default configuration options and launch the server:
+* From the ``Server`` configuration panel, accept all default values and
+click on ``Submit``:
 
-![](doc/source/images/nimbix-server-config.png)
+![](doc/source/images/tensor-flow-demo-options.png)
 
-![](doc/source/images/nimbix-confirm-server.png)
+    NOTE: Ignore the "$0.43/hr" charge listed. With your trial account you
+    receive 10 hours of free processing time.
 
-![](doc/source/images/nimbix-response.png)
+* Once started, the following ``Dashboard`` panel will be displayed. When
+the server ``Status`` turns to ``Processing``, the server is ready to be
+accessed.
 
-* From the ``Dashboard`` panel, select the ``TensorFlow-Demo: Server``
-to view the server job information. Take note of the server IP address
-and password:
+Take note of the ``Address`` and ``Password`` fields.
 
-![](doc/source/images/nimbix-server-creds.png)
+![](doc/source/images/tensor-flow-demo-start.png)
 
 Using the information obtained from the previous step, launch the server
 session:
@@ -98,7 +147,7 @@ launch the Jupyter notebook:
 
 Take note of the URL provided. Use this link to access the notebook.
 
-## 3. Access and start the Jupyter notebook
+## 4. Access and start the Jupyter notebook
 
 Proceed to the provided notebook URL and click on the
 ``Clean_Energy_Watson_V1.0.ipynb`` link to start the Jupyter notebook.
@@ -107,7 +156,7 @@ Proceed to the provided notebook URL and click on the
 
 ![](doc/source/images/nb-start-page.png)
 
-## 4. Run the notebook
+## 5. Run the notebook
 
 When a notebook is executed, what is actually happening is that each code cell in
 the notebook is executed, in order, from top to bottom.
@@ -147,7 +196,7 @@ in the following table:
 
 ![](doc/source/images/demo-diffs.png)
 
-## 5. Analyze the results
+## 6. Analyze the results
 
 The result of running the notebook is a report which may be shared with or
 without sharing the code. You can share the code for an audience that wants
@@ -219,7 +268,7 @@ models, the notebook is able to achieve a 70% success rate for
 predicting whether the Nasdaq Energy Index would close up or down on any
 given day.
 
-## 6. Save and share
+## 7. Save and share
 
 ### How to save your work:
 
@@ -232,17 +281,16 @@ Under the `File` menu, there are options to:
 * `Print Preview` will allow you to print the current state of the
   notebook.
 
-## 7. Shut down the TensorFlow demo
+## 8. Shut down the TensorFlow demo
 
 After completing the TensorFlow demo, please remember to shutdown the server
-to free up resourses on the Nimbix Cloud Platform.
+to free up resourses on the Nimbix Cloud Platform. Also, remember that
+the free trial regisration only provides 10 hours of compute time.
 
-* From the Nimbix dashboard, select the `TensorFlow-Demo` application
-to show job details.
+* From the Nimbix ``Dashboard : Current Jobs`` view, click on the
+``Shutdown`` button and confirm.
 
-* Click on the `Shutdown' button and confirm.
-
-![](doc/source/images/nimbix-shutdown.png)
+![](doc/source/images/tensor-flow-demo-kill.png)
 
 <!--
 # Sample output
