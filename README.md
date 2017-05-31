@@ -71,6 +71,8 @@ confirm your account password:
 
 ![](doc/source/images/nimbix-set-password.png)
 
+> *NOTE:* A "Promotional Code" is not required.
+
 * Wait for a confirmation email that will will provide instructions
 for logging into Nimbix:
 
@@ -83,7 +85,7 @@ the Nimbix login page:
 
 ## 2. Navigating the Nimbix UI
 
-The Nimbix UI has 2 main controls located at the top of the panel.
+The Nimbix UI has two main controls located at the top of the panel.
 
 ![](doc/source/images/nimbix-navigation.png)
 
@@ -115,7 +117,7 @@ click on ``Submit``:
 
 ![](doc/source/images/tensor-flow-demo-options.png)
 
-    NOTE: Ignore the "$0.43/hr" charge listed. With your trial account you receive 10 hours of free processing time.
+> *NOTE:* Ignore the "$0.43/hr" charge listed. With your trial account you receive 10 hours of free processing time.
 
 * Once started, the following ``Dashboard`` panel will be displayed. When
 the server ``Status`` turns to ``Processing``, the server is ready to be
