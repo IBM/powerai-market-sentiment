@@ -113,7 +113,7 @@ of available apps in the ``Compute:All Applications`` view.
 ![](doc/source/images/tensor-flow-demo-launch.png)
 
 * From the ``TensorFlow`` configuration panel, accept all default values and
-click on ``Submit``:
+click the ``Submit`` button:
 
 ![](doc/source/images/tensor-flow-demo-config.png)
 
@@ -125,6 +125,8 @@ accessed.
 
     Take note of the ``Password`` value.
 
+* Click ``Click here to connect`` to launch web access to the notebook.
+
 ![](doc/source/images/tensor-flow-demo-click.png)
 
 * Log-in using the user name ``nimbix`` and the previously supplied password.
@@ -134,8 +136,6 @@ accessed.
 * From the notebook file listing, click ``MLDL-demo``.
 
 ![](doc/source/images/tensor-flow-files-1.png)
-
-Take note of the URL provided. Use this link to access the notebook.
 
 ## 4. Access and start the Jupyter notebook
 
