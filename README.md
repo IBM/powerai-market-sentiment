@@ -102,58 +102,47 @@ selected the ``Current Jobs`` dashboard view.
 
 Once signed into Nimbix, deploy the demo on an IBM Power8 server.
 
-* Search for and select the ``tensorflow_demo`` in the list of available apps
-in the ``Compute:All Applications`` view.
+* Search for and select the ``TensorFlow Example Notebook`` in the list
+of available apps in the ``Compute:All Applications`` view.
 
-![](doc/source/images/tensor-flow-select-demo.png)
+![](doc/source/images/nimbix-search-page-demo.png)
 
-* From the ``tensorflow_demo`` application panel, select the ``Server``
-option:
+* From the ``TensorFlow Example Notebook`` application panel, click the
+``TensorFlow`` button:
 
-![](doc/source/images/tensor-flow-demo-page.png)
+![](doc/source/images/tensor-flow-demo-launch.png)
 
-* From the ``Server`` configuration panel, accept all default values and
-click on ``Submit``:
+* From the ``TensorFlow`` configuration panel, accept all default values and
+click the ``Submit`` button:
 
-![](doc/source/images/tensor-flow-demo-options.png)
+![](doc/source/images/tensor-flow-demo-config.png)
 
-> *NOTE:* Ignore the "$0.43/hr" charge listed. With your trial account you receive 10 hours of free processing time.
+> *NOTE:* Ignore the "$3.80/hr" charge listed. With your trial account you receive 10 hours of free processing time.
 
 * Once started, the following ``Dashboard`` panel will be displayed. When
 the server ``Status`` turns to ``Processing``, the server is ready to be
 accessed.
 
-Take note of the ``Address`` and ``Password`` fields.
+    Take note of the ``Password`` value.
 
-![](doc/source/images/tensor-flow-demo-start.png)
+* Click ``Click here to connect`` to launch web access to the notebook.
 
-Using the information obtained from the previous step, launch the server
-session:
+![](doc/source/images/tensor-flow-demo-click.png)
 
-* Open a terminal session on the same host that accessed the Nimbix Cloud.
+* Log-in using the user name ``nimbix`` and the previously supplied password.
 
-* Enter the following ssh command, substituting the values provided in
-the previous step.
+![](doc/source/images/tensor-flow-demo-login.png)
 
-    ``ssh -L 8888:localhost:8888 nimbix@<server ip addr>``
+* From the notebook file listing, click ``MLDL-demo``.
 
-* When prompted, enter the supplied password.
-
-![](doc/source/images/nimbix-ssh-session.png)
-
-From the same terminal window, enter the command ``ipython notebook`` to
-launch the Jupyter notebook:
-
-![](doc/source/images/nimbix-launch-notebook.png)
-
-Take note of the URL provided. Use this link to access the notebook.
+![](doc/source/images/tensor-flow-files-1.png)
 
 ## 4. Access and start the Jupyter notebook
 
-Proceed to the provided notebook URL and click on the
+Click on the
 ``Clean_Energy_Watson_V1.0.ipynb`` link to start the Jupyter notebook.
 
-![](doc/source/images/jupyter-nb-contents.png)
+![](doc/source/images/tensor-flow-files-2.png)
 
 ![](doc/source/images/nb-start-page.png)
 
