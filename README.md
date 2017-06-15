@@ -32,6 +32,10 @@ not have an abundance of time or data science experience.
 * [Data Science](https://medium.com/ibm-data-science-experience): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
 * [Tensorflow](https://www.tensorflow.org/): An open source software library for numerical computation using data flow graphs.
 
+# Watch the Video
+
+[![](http://img.youtube.com/vi/1nnWj6W7QJI/0.jpg)](https://www.youtube.com/watch?v=1nnWj6W7QJI)
+
 # Steps
 
 Follow these steps to setup and run this developer journey. The steps are
