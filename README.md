@@ -174,7 +174,7 @@ There are several ways to execute the code cells in your notebook:
 
 Notes:
 
-- Regading cell `[4]`: For the journey we import already collected
+- Regarding cell `[4]`: For the journey we import already collected
 stock market data. This can be done inside the notebook, but requires
 access to private financial websites (such as Bloomberg), which requires
 a subscription fee.
