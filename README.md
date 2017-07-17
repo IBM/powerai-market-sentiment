@@ -97,7 +97,7 @@ The Nimbix UI has two main controls located at the top of the panel.
 again to hide the list. In the example view above, we have selected
 the ``Dashboard`` mode.
 
-* On the left-side, click on the ``collapsable`` icon to display a
+* On the left-side, click on the ``collapsible`` icon to display a
 drop-down list of views that are associated with the selected mode.
 Click on the icon again to hide the list. In the example above, we have
 selected the ``Current Jobs`` dashboard view.
