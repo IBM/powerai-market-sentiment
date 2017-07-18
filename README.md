@@ -203,7 +203,7 @@ closing value of the Nasdaq Clean Energy Index can be predicted by
 examining various input sources, such as the New York Times and other
 financial markets, both foreign and domestic. These markets include:
 
-- Austrailian Clean Tech Index (asx_cti)
+- Australian Clean Tech Index (asx_cti)
 - Germany DAX (dax_eusdn)
 - UK FTSE100 (ftse-eo100)
 - UK Credit Suisse (n8wh)
@@ -244,7 +244,7 @@ values of other indexes available on the same day (i.e. non-US indexes).
 ![](doc/source/images/scatter-graph.png)
 
 The final analysis from the EDA are as follows:
-- The Austrailian Index close from the same day is a strong predictor
+- The Australian Index close from the same day is a strong predictor
 for the close of the Nasdaq Energy Index.
 - European indices are a significant predictor for the close of the
 Nasdaq Energy Index.
@@ -257,7 +257,7 @@ After determining this correlation in the data, the notebook then
 uses TensorFlow and the IBM PowerAI machine learning framework to train
 and test the data.
 
-After hundreds of thousands of interations over the data using multiple
+After hundreds of thousands of iterations over the data using multiple
 models, the notebook is able to achieve a 70% success rate for
 predicting whether the Nasdaq Energy Index would close up or down on any
 given day.
@@ -278,8 +278,8 @@ Under the `File` menu, there are options to:
 ## 8. Shut down the TensorFlow demo
 
 After completing the TensorFlow demo, please remember to shutdown the server
-to free up resourses on the Nimbix Cloud Platform. Also, remember that
-the free trial regisration only provides 10 hours of compute time.
+to free up resources on the Nimbix Cloud Platform. Also, remember that
+the free trial registration only provides 10 hours of compute time.
 
 * From the Nimbix ``Dashboard:Current Jobs`` view, click on the
 ``Shutdown`` button and confirm.
