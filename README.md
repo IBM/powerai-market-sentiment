@@ -1,5 +1,7 @@
 # Evaluating predictability of financial markets using New York Times sentiments and market data.
 
+*Read this in other languages: [한국어](README.ko.md).*
+
 In this developer journey we will use a Jupyter notebook to showcase an
 example of machine learning with time series on IBM Power8 systems. The
 notebook will focus on evalulating the predictability of future
