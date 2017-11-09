@@ -43,116 +43,70 @@ not have an abundance of time or data science experience.
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
-1. [Register for a Trial Nimbix Cloud Platform account](#1-register-for-a-trial-nimbix-cloud-platform-account)
-2. [Navigating the Nimbix UI](#2-navigating-the-nimbix-ui)
-3. [Deploy and run the TensorFlow Demo](#3-deploy-and-run-the-tensorflow-demo)
-4. [Access and start the Jupyter notebook](#4-access-and-start-the-jupyter-notebook)
-5. [Run the notebook](#5-run-the-notebook)
-6. [Analyze the results](#6-analyze-the-results)
-7. [Save and share](#7-save-and-share)
-8. [Shut down the TensorFlow Demo](#8-shut-down-the-tensorflow-demo)
+1. [Get 24-hours of free access to the PowerAI platform](#1-get-24-hours-of-free-access-to-the-powerai-platform)
+1. [Access and start the Jupyter notebook](#2-access-and-start-the-jupyter-notebook)
+1. [Run the notebook](#3-run-the-notebook)
+1. [Analyze the results](#4-analyze-the-results)
+1. [Save and share](#5-save-and-share)
+1. [End your trial](#6-end-your-trial)
 
-## 1. Register for a Trial Nimbix Cloud Platform account
+## 1. Get 24-hours of free access to the PowerAI platform
 
-IBM has partnered with Nimbix to provide journey developers a trial
-account that provides 10 hours of free processing time on the PowerAI
-platform.
+IBM has partnered with Nimbix to provide cognitive developers a trial
+account that provides 24-hours of free processing time on the PowerAI
+platform. Follow these steps to register for access to Nimbix to try
+the PowerAI Cognitive Code Patterns and explore the platform.
 
-The registration process is as follows:
+Go to the [IBM Marketplace PowerAI Portal](https://www.ibm.com/us-en/marketplace/deep-learning-platform), and click `Request Trial`.
 
-* Go to the [IBM Cognitive Journey Demo Registration Page](https://www.nimbix.net/cognitive-journey)
-and submit the form to initiate the registration process.
+On the IBM PowerAI Trial page, shown below, enter the required information to sign up for an IBM account and click `Continue`. If you already have an IBM ID, click `Already have an account? Log in`, enter your credentials and click `Continue`.
 
-![](doc/source/images/nimbix-registration.png)
+![](doc/source/images/EnterIBMID.jpg)
 
-* Wait for a confirmation email. Note that this process is not automated so
-it may take up to 24 hours to be reviewed and approved.
-* Once you receive the email, you will have 24 hours to complete the process
-by clicking on the provided link:
+On the **Almost there…** page, shown below, enter the required information and click `Continue` to complete the registration and launch the **IBM Marketplace Products and Services** page.
 
-![](doc/source/images/nimbix-confirmation-1.png)
+![](doc/source/images/PowerAITrial2.jpg)
 
-* The above link will take you to this page where you need to create and
-confirm your account password:
+Your **IBM Marketplace Products and Services** page displays all offerings that are available to you; the PowerAI Trial should now be one of them. From the PowerAI Trial section, click `Launch`, as shown below, to launch the **IBM PowerAI trial** page.
 
-![](doc/source/images/nimbix-set-password.png)
+![](doc/source/images/launchtrialbutton.jpg)
 
-> *NOTE:* A "Promotional Code" is not required.
+The **Welcome to IBM PowerAI Trial** page provides instructions for accessing the trial, as shown below. Alternatively, you will receive an email confirming your registration with similar instructions that you can follow to start the trial.
 
-* Wait for a confirmation email that will will provide instructions
-for logging into Nimbix:
+![](doc/source/images/welcomepage.jpg)
 
-![](doc/source/images/nimbix-registration-complete.png)
+Summary of steps for starting the trial:
 
-* Click the [link](https://mc.jarvice.com?page=compute&team) to take you to
-the Nimbix login page:
+* Start a terminal session from your local machine and issue the following command where `{IP Address}` is the IP Address (or host name) shown on the welcome page (or in the confirmation email).
+  ```sh
+  ssh -L 8888:localhost:8888 nimbix@{IP Address}
+  ```
 
-![](doc/source/images/nimbix-login.png)
+* Enter the password shown on the welcome page (or in the confirmation email) when prompted.
 
-## 2. Navigating the Nimbix UI
+* From your local browser, go to the following URL to get started: http://localhost:8888/tree/.
 
-The Nimbix UI has two main controls located at the top of the panel.
+## 2. Access and start the Jupyter notebook
 
-![](doc/source/images/nimbix-navigation.png)
+Use git clone to download the example notebook and data with a single command.
 
-* Click on ``NIBMIX`` to display a drop-down list of available modes. Click
-again to hide the list. In the example view above, we have selected
-the ``Dashboard`` mode.
+* Get a new terminal window by clicking on the ```New``` pull-down and selecting ``Terminal``.
 
-* On the left-side, click on the ``collapsible`` icon to display a
-drop-down list of views that are associated with the selected mode.
-Click on the icon again to hide the list. In the example above, we have
-selected the ``Current Jobs`` dashboard view.
+![](doc/source/images/powerai-notebook-terminal.png)
 
-## 3. Deploy and run the TensorFlow demo
+* Run the following command to clone the git repo:
 
-Once signed into Nimbix, deploy the demo on an IBM Power8 server.
+```commandline
+git clone https://github.com/IBM/powerai-notebook
+```
 
-* Search for and select the ``TensorFlow Example Notebook`` in the list
-of available apps in the ``Compute:All Applications`` view.
+![](doc/source/images/powerai-notebook-clone.png)
 
-![](doc/source/images/nimbix-search-page-demo.png)
+* Once done, you can exit the terminal and return to the notebook browser. Use the ``Files`` tab and click on ``powerai-notebook`` then ``notebooks`` and then ``Clean_Energy_Watson_V1.0.ipynb`` to open the notebook.
 
-* From the ``TensorFlow Example Notebook`` application panel, click the
-``TensorFlow`` button:
+![](doc/source/images/powerai-notebook-open.png)
 
-![](doc/source/images/tensor-flow-demo-launch.png)
-
-* From the ``TensorFlow`` configuration panel, accept all default values and
-click the ``Submit`` button:
-
-![](doc/source/images/tensor-flow-demo-config.png)
-
-> *NOTE:* Ignore the "$3.80/hr" charge listed. With your trial account you receive 10 hours of free processing time.
-
-* Once started, the following ``Dashboard`` panel will be displayed. When
-the server ``Status`` turns to ``Processing``, the server is ready to be
-accessed.
-
-    Take note of the ``Password`` value.
-
-* Click ``Click here to connect`` to launch web access to the notebook.
-
-![](doc/source/images/tensor-flow-demo-click.png)
-
-* Log-in using the user name ``nimbix`` and the previously supplied password.
-
-![](doc/source/images/tensor-flow-demo-login.png)
-
-* From the notebook file listing, click ``MLDL-demo``.
-
-![](doc/source/images/tensor-flow-files-1.png)
-
-## 4. Access and start the Jupyter notebook
-
-Click on the
-``Clean_Energy_Watson_V1.0.ipynb`` link to start the Jupyter notebook.
-
-![](doc/source/images/tensor-flow-files-2.png)
-
-![](doc/source/images/nb-start-page.png)
-
-## 5. Run the notebook
+## 3. Run the notebook
 
 When a notebook is executed, what is actually happening is that each code cell in
 the notebook is executed, in order, from top to bottom.
@@ -192,7 +146,7 @@ in the following table:
 
 ![](doc/source/images/demo-diffs.png)
 
-## 6. Analyze the results
+## 4. Analyze the results
 
 The result of running the notebook is a report which may be shared with or
 without sharing the code. You can share the code for an audience that wants
@@ -264,7 +218,7 @@ models, the notebook is able to achieve a 70% success rate for
 predicting whether the Nasdaq Energy Index would close up or down on any
 given day.
 
-## 7. Save and share
+## 5. Save and share
 
 ### How to save your work:
 
@@ -277,24 +231,13 @@ Under the `File` menu, there are options to:
 * `Print Preview` will allow you to print the current state of the
   notebook.
 
-## 8. Shut down the TensorFlow demo
+## 6. End your trial
 
-After completing the TensorFlow demo, please remember to shutdown the server
-to free up resources on the Nimbix Cloud Platform. Also, remember that
-the free trial registration only provides 10 hours of compute time.
+When you are done with your work, please cancel your subscription by issuing the following command in your ssh session or by visiting the `Manage` link on the **My Products and Services** page.
 
-* From the Nimbix ``Dashboard:Current Jobs`` view, click on the
-``Shutdown`` button and confirm.
-
-![](doc/source/images/tensor-flow-demo-kill.png)
-
-<!--
-# Sample output
-
-The following is a sample data visualization with code
- ![](doc/source/images/output.png)
- For a full example without code see [`data/examples/sample_output.pdf`](data/examples/sample_output.pdf).
--->
+```sh
+sudo poweroff --force
+```
 
 # Troubleshooting
 
