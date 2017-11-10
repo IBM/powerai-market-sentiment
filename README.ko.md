@@ -36,97 +36,70 @@
 
 이 개발자 과정을 설정하고 실행하려면 다음 단계를 따르십시오. 각 단계는 아래에서 자세하게 설명됩니다.
 
-1. [평가판 Nimbix Cloud Platform 계정 등록](#1-register-for-a-trial-nimbix-cloud-platform-account)
-2. [Nimbix UI 탐색](#2-navigating-the-nimbix-ui)
-3. [TensorFlow 데모 배포 및 실행](#3-deploy-and-run-the-tensorflow-demo)
-4. [Jupyter Notebook 접근 및 시작](#4-access-and-start-the-jupyter-notebook)
-5. [Notebook 실행](#5-run-the-notebook)
-6. [결과 분석](#6-analyze-the-results)
-7. [저장 및 공유](#7-save-and-share)
-8. [TensorFlow 데모 종료시키기](#8-shut-down-the-tensorflow-demo)
+1. [PowerAI 플랫폼에의 24시간 무료 Access받기](#1-PowerAI-플랫폼에의-24시간-무료-Access받기)
+1. [Jupyter Notebook 접근 및 시작](#2-Jupyter-Notebook-접근-및-시작)
+1. [Notebook 실행](#3-Notebook-실행)
+1. [결과 분석](#4-결과-분석)
+1. [저장 및 공유](#5-저장-및-공유)
+1. [Trial 계정 사용 종료](#6-Trial-계정-사용-종료)
 
-## 1. 평가판 Nimbix Cloud Platform 계정 등록
+## 1. PowerAI 플랫폼에의 24시간 무료 Access받기
 
-IBM과 Nimbux의 파트너쉽으로 PowerAI 플랫폼에서의 10시간 무료 컴퓨팅 시간을 제공하는 평가판 계정이 이 과정을 따라하는 개발자 들에게 제공됩니다.
+IBM과 Nimbux의 파트너쉽으로 PowerAI 플랫폼에서의 24시간 무료 컴퓨팅 시간을 제공하는 평가판 계정이 이 과정을 따라하는 개발자 들에게 제공됩니다.
+PowerAI Cognitive 코드 패턴 및 플래폼을 체험하기 위해 Nimbix에 등록하려면 다음 과정을 따르십시오.
 
-등록 방법은 다음과 같습니다.:
+* [IBM 마켓플레이스 PowerAI 포탈](https://www.ibm.com/us-en/marketplace/deep-learning-platform)를 방문하여 `Request Trial`을 클릭하십시오.
 
-* [IBM Cognitive 과정 데모 등록 페이지](https://www.nimbix.net/cognitive-journey)를 방문하여 등록 프로세스를 시작하십시오.
+아래 화면과 같은 IBM PowerAI Trial 페이지에서 IBM Account 생성을 위해 필요한 정보를 입력하고 `Continue`를 클릭하십시오. 이미 IBM ID를 가지고 계시다면 `Already have an account? Log in`을 선택하고 계정 정보를 입력 후 `Continue`를 클릭하십시오.
 
-![](doc/source/images/nimbix-registration.png)
+![](doc/source/images/EnterIBMID.jpg)
 
-* 확인 이메일을 기다립니다. 이 프로세스는 자동하되어 있지 않아 검토하고 승인하는 데 최대 24 시간까지 소요될 수 있습니다.
-* 확인 이메일을 받으면 24시간 이네에 제공된 링크를 클릭하여 등록 절차를 완료 하십시오.:
+On the **Almost there…** page, shown below, enter the required information and click `Continue` to complete the registration and launch the **IBM Marketplace Products and Services** page.
 
-![](doc/source/images/nimbix-confirmation-1.png)
+아래 화면과 같은 **Almost there…** 페이지에서 필요한 정보를 입력하고 `Continue`를 클릭하면 등록이 완료됩니다. **IBM Marketplace Products and Services** 페이지를 여십시오.
 
-* 위의 링크를 클릭하면 계정 패스워드를 생성하는 페이지로 이동합니다.:
+![](doc/source/images/PowerAITrial2.jpg)
 
-![](doc/source/images/nimbix-set-password.png)
+Your **IBM Marketplace Products and Services** page displays all offerings that are available to you; the PowerAI Trial should now be one of them. From the PowerAI Trial section, click `Launch`, as shown below, to launch the **IBM PowerAI trial** page.
 
-> *참고:* "프로모션 코드"는 필요하지 않습니다.
+**IBM Marketplace Products and Services** 페이지는 귀하가 사용할 수 있는 모든 Offering을 보여줍니다. PowerAI Trial이 이제 그 중 하나로 생성되어 있을 것입니다. PowerAI Trial 섹션에서 아래에 보이는 대로 `Launch` 를 클릭하면 **IBM PowerAI trial**페이지가 열립니다.
 
-* Nimbix에 로그인 하는 방법을 알려주는 확인 이메일을 기다립니다.:
+![](doc/source/images/launchtrialbutton.jpg)
 
-![](doc/source/images/nimbix-registration-complete.png)
+아래 화면처럼 **Welcome to IBM PowerAI Trial** 페이지는 Trial에 접근하기 위한 가이드를 제공합니다. 또는 귀하가 Trial을 시작할 수 있도록 유사한 가이드가 등록을 컨펌하는 이메일로 전달됩니다. 
 
-* [link](https://mc.jarvice.com?page=compute&team)를 클릭하면 Nimbix 로그인 페이지로 이동합니다.:
+![](doc/source/images/welcomepage.jpg)
 
-![](doc/source/images/nimbix-login.png)
+Trial 계정으로 시작하는 과정 요약:
 
-## 2. Nimbix UI 탐색
+* 사용하고 계신 노트북에서 커맨드창을 열고 다음 명령을 수행하십시오. `{IP Address}`에는 Welcome페이지 또는 등록 컨펌 이메일에 명시된 IP 주소 또는 호스트네임을 입력하십시오.
+  ```sh
+  ssh -L 8888:localhost:8888 nimbix@{IP Address}
+  ```
 
-Nimbix UI는 상단 패널에 두개의 주요 링크가 있습니다.
+* 패스워드를 입력하라고 나오면 Welcome페이지 또는 등록 컨펌 이메일에 명시된 패스워드를 입력하십시오.
+* 시작하려면 브라우저에서 다음 URL에 접속하십시오: http://localhost:8888/tree/.
 
-![](doc/source/images/nimbix-navigation.png)
+## 2. Jupyter Notebook 접근 및 시작
 
-* ``NIBMIX``를 클릭하면 사용 가능한 모드 목록이 드롭 다운으로 보여집니다. 한번 더 클릭하면 목록이 사라집니다. 위의 화면에서는 ``Dashboard`` 모드를 선택했습니다.
+노트북 예제 및 데이터를 한번에 다운로드 하려면 git clone을 사용하십시오.
 
-* 왼쪽에서 ``collapsible`` 아이콘을 클릭하면 선택된 모드와 관련된 뷰 목록이 드롭 다운으로 표시됩니다. 아이콘을 한번 더 클릭하면 목록이 사라집니다. 위의 화면에서는 ``Current Jobs`` 화면을 선택했습니다.
+* ```New```를 클릭하고 ``Terminal``를 선택하여 터미널을 엽니다.
 
-## 3. TensorFlow 데모 배포 및 실행
+![](doc/source/images/powerai-notebook-terminal.png)
 
-Nimbix에 로그인 했으면 IBM Power8 서버에 데모를 배포하십시오.
+* Git 레파지토리를 Clone하기 위해 다음 명령을 실행하세요.:
+```commandline
+git clone https://github.com/IBM/powerai-notebook
+```
 
-* ``Compute:All Applications`` 화면의 사용 가능한 앱 목록에서 ``TensorFlow Example Notebook``을 검색하여 선택하십시오.
+![](doc/source/images/powerai-notebook-clone.png)
 
-![](doc/source/images/nimbix-search-page-demo.png)
+* 이제 터미널을 종료하고 노트북 브라우저로 돌아옵니다. ``Files``탭을 사용하여 ``powerai-notebook``을 클릭하고 ``notebooks``을 선택한 후 ``Clean_Energy_Watson_V1.0.ipynb``를 선택하면 노트북을 오픈할 수 있습니다.
 
-* ``TensorFlow Example Notebook`` 애플리케이션 패널에서, ``TensorFlow`` 버튼을 클릭하십시오.:
+![](doc/source/images/powerai-notebook-open.png)
 
-![](doc/source/images/tensor-flow-demo-launch.png)
-
-* ``TensorFlow`` 구성 패널에서 모든 기본 값을 적용하고 ``Submit`` 버튼을 누릅니다.:
-
-![](doc/source/images/tensor-flow-demo-config.png)
-
-> *참고:* "$3.80/hr" 요금은 무시하십시오. 평가판 계정을 사용하면 10시간의 무료 컴퓨팅 시간이 제공됩니다.
-
-* 시작 되면, 다음과 같은 ``Dashboard`` 패널이 보여집니다. 서버의 ``Status``가 ``Processing``으로 바뀌면, 서버에 접근할 수 있습니다.
-
-    ``Password`` 값을 메모해 두십시오.
-
-* 노트북을 실행하려면 ``Click here to connect``를 클릭하십시오.
-
-![](doc/source/images/tensor-flow-demo-click.png)
-
-* 사용자 이름 ``nimbix`` 와 이 전에 제공된 패스워드를 사용하여 로그인 하십시오.
-
-![](doc/source/images/tensor-flow-demo-login.png)
-
-* 노트북 파일 목록에서 ``MLDL-demo``를 클릭하십시오.
-
-![](doc/source/images/tensor-flow-files-1.png)
-
-## 4. Jupyter Notebook 접근 및 시작
-
-주피터 노트북을 시작하려면 ``Clean_Energy_Watson_V1.0.ipynb`` 링크를 클릭하십시오.
-
-![](doc/source/images/tensor-flow-files-2.png)
-
-![](doc/source/images/nb-start-page.png)
-
-## 5. Notebook 실행
+## 3. Notebook 실행
 
 노트북을 실행시키면 노트북의 각 코드 셀이 위에서 아래로 순서대로 실행됩니다.
 
@@ -153,7 +126,7 @@ Nimbix에 로그인 했으면 IBM Power8 서버에 데모를 배포하십시오.
 
 ![](doc/source/images/demo-diffs.png)
 
-## 6. 결과 분석
+## 4. 결과 분석
 
 노트북을 실행한 결과는 코드와 함께 또는 코드 없이 공유할 수 있는 레포트 입니다. 코드는 어떻게 결론에 이르렀는지를 보고 싶어 하는 사람에게 공유하면 좋습니다. 텍스트, 코드 그리고 결과/차트는 단일 웹 페이지로 결합됩니다. 코드를 보고 싶어하지 않는 사람에게는 텍스트와 결과/차트만 보여주는 웹 페이지로 공유할 수 있습니다.
 
@@ -204,7 +177,7 @@ EDA의 최종 분석은 다음과 같습니다.:
 
 여러 모델을 사용하여 데이터에 대해 수십만 번의 반복 작업을 수행한 후, 이 노트북은 나스닥 지수가 특정 날짜에 올라가거나 내려가는 것을 예측하는 데에 70%의 성공률을 달성할 수 있습니다.
 
-## 7. 저장 및 공유
+## 5. 저장 및 공유
 
 ### 작업 저장 방법:
 
@@ -215,21 +188,13 @@ EDA의 최종 분석은 다음과 같습니다.:
 * `Download as...` 로컬 시스템에 노트북을 다운로드합니다.
 * `Print Preview` 노트북의 현재 상태를 인쇄합니다.
 
-## 8. TensorFlow 데모 종료시키기
+## 6. Trial 계정 사용 종료
 
-TensorFlow 데모가 완료 되었으면 Nimbix Cloud Platform의 리소스를 확보하기 위해 서버를 종료시켜야 합니다. 무료 평가판 등록은 10시간의 컴퓨팅 시간만을 제공합니다.
+실습을 마친 후에는 ssh session에서 다음 명령을 실행하거나 **My Products and Services**페이지에 있는 `Manage` 링크를 통해 Trial계정을 종료시켜 주십시오.
 
-* Nimbix의 ``Dashboard:Current Jobs`` 화면에서, ``Shutdown``버튼을 클릭하십시오.
-
-![](doc/source/images/tensor-flow-demo-kill.png)
-
-<!--
-# Sample output
-
-The following is a sample data visualization with code
- ![](doc/source/images/output.png)
- For a full example without code see [`data/examples/sample_output.pdf`](data/examples/sample_output.pdf).
--->
+```sh
+sudo poweroff --force
+```
 
 # 문제 해결(Troubleshooting)
 
