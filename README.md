@@ -2,13 +2,13 @@
 
 *Read this in other languages: [한국어](README.ko.md).*
 
-In this developer journey we will use a Jupyter notebook to showcase an
+In this Code Pattern we will use a Jupyter notebook to showcase an
 example of machine learning with time series on IBM Power8 systems. The
 notebook will focus on evalulating the predictability of future
 financial market values in the "renewable energy" sector by examining
 related markets and sentiment detected in New York Times news articles.
 
-When the reader has completed this journey, they will understand how to:
+When the reader has completed this Code Pattern, they will understand how to:
 
 * Extract and format structured data from various external sources.
 * Extract and format unstructured data and use IBM Watson cognitive
@@ -16,15 +16,21 @@ services to extract data sentiment.
 * Build and train Neural Networks.
 * Display and share results in Jupyter notebooks.
 
-The intended audience for this journey is application developers who need
+The intended audience for this Code Pattern is application developers who need
 to efficiently build powerful deep learning applications, but who may
 not have an abundance of time or data science experience.
 
 ![](doc/source/images/architecture.png)
 
+## Flow
+1. The developer loads the provided notebook, which is run on a PowerAI system.
+2. As the notebook is run, it uses data from The New York Times and market data.
+3. The notebook uses the IBM Watson Natural Language Understanding service to analyze the text.
+4. The notebook uses TensorFlow and machine learning to develop models and predictions.
+
 ## Included components
 
-* [IBM Watson Natural Language Understanding](https://www.ibm.com/watson/developercloud/natural-language-understanding.html): A Bluemix service that can analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles, using natural language understanding.
+* [IBM Watson Natural Language Understanding](https://www.ibm.com/watson/developercloud/natural-language-understanding.html): An IBM Cloud service that can analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, semantic roles, using natural language understanding.
 * [IBM Power AI](https://www.ibm.com/ms-en/marketplace/deep-learning-platform): A software platform that includes the most popular machine learning frameworks with IBM Power Systems.
 * [IBM Power Systems](https://www-03.ibm.com/systems/power/): IBM Power Systems is IBM's Power Architecture-based server line, built with open technologies and designed for mission-critical applications.
 * [Nimbix Cloud Computing Platform](https://www.nimbix.net/): An HPC & Cloud Supercomputing platform enabling engineers, scientists & developers, to build, compute, analyze, and scale simulations in the cloud
@@ -40,7 +46,7 @@ not have an abundance of time or data science experience.
 
 # Steps
 
-Follow these steps to setup and run this developer journey. The steps are
+Follow these steps to setup and run this Code Pattern. The steps are
 described in detail below.
 
 1. [Get 24-hours of free access to the PowerAI platform](#1-get-24-hours-of-free-access-to-the-powerai-platform)
@@ -130,7 +136,7 @@ There are several ways to execute the code cells in your notebook:
 
 Notes:
 
-- Regarding cell `[4]`: For the journey we import already collected
+- Regarding cell `[4]`: For the Code Pattern we import already collected
 stock market data. This can be done inside the notebook, but requires
 access to private financial websites (such as Bloomberg), which requires
 a subscription fee.
@@ -139,7 +145,7 @@ a subscription fee.
 notebook processing time, the New York Times data has already
 been collected and stored in a JSON file, and is imported by the notebook.
 
-- The journey is based on the original Google Cloud Platform example
+- The Code Pattern is based on the original Google Cloud Platform example
 documented at https://cloud.google.com/solutions/machine-learning-with-financial-time-series-data.
 The difference between this "IBM Demo" and the original "Google Demo" is noted
 in the following table:
@@ -154,7 +160,7 @@ to see how you came your conclusions. The text, code and output/charts are
 combined in a single web page. For an audience that does not want to see
 the code, you can share a web page that only shows text and output/charts.
 
-The graphs and charts produced in this journey attempt to prove that the
+The graphs and charts produced in this Code Pattern attempt to prove that the
 closing value of the Nasdaq Clean Energy Index can be predicted by
 examining various input sources, such as the New York Times and other
 financial markets, both foreign and domestic. These markets include:
@@ -242,6 +248,21 @@ sudo poweroff --force
 # Troubleshooting
 
 [See DEBUGGING.md.](DEBUGGING.md)
+
+# Links
+
+* [Demo on Youtube](https://www.youtube.com/watch?v=1nnWj6W7QJI): Watch the video.
+* [Putting the “AI” in PowerAI](https://www.ibm.com/blogs/research/2016/11/powerai/): IBM’s latest Power servers, the world’s fastest deep learning servers, come with an AI twist.
+* [PowerAI Now Includes Newly Announced TensorFlow 1.0](https://www.ibm.com/developerworks/community/blogs/fe313521-2e95-46f2-817d-44a4f27eba32/entry/PowerAI_Now_Includes_Newly_Announced_TensorFlow_1_0?lang=en): As the TensorFlow ecosystem grows, IBM brings its features to PowerAI to give deep-learning developers a high-performance turnkey system.
+
+# Learn more
+
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
+* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
+* **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
+* **Data Science Experience**: Master the art of data science with IBM's [Data Science Experience](https://datascience.ibm.com/)
+* **PowerAI**: Get started or get scaling, faster, with a software distribution for machine learning running on the Enterprise Platform for AI: [IBM Power Systems](https://www.ibm.com/ms-en/marketplace/deep-learning-platform)
 
 # License
 
