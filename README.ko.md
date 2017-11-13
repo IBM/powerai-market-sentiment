@@ -36,12 +36,12 @@
 
 이 개발자 과정을 설정하고 실행하려면 다음 단계를 따르십시오. 각 단계는 아래에서 자세하게 설명됩니다.
 
-1. [PowerAI 플랫폼에의 24시간 무료 Access받기](#1-PowerAI-플랫폼에의-24시간-무료-Access받기)
-1. [Jupyter Notebook 접근 및 시작](#2-Jupyter-Notebook-접근-및-시작)
-1. [Notebook 실행](#3-Notebook-실행)
+1. [PowerAI 플랫폼에의 24시간 무료 Access받기](#1-powerai-플랫폼에의-24시간-무료-access받기)
+1. [Jupyter Notebook 접근 및 시작](#2-jupyter-notebook-접근-및-시작)
+1. [Notebook 실행](#3-notebook-실행)
 1. [결과 분석](#4-결과-분석)
 1. [저장 및 공유](#5-저장-및-공유)
-1. [Trial 계정 사용 종료](#6-Trial-계정-사용-종료)
+1. [Trial 계정 사용 종료](#6-trial-계정-사용-종료)
 
 ## 1. PowerAI 플랫폼에의 24시간 무료 Access받기
 
