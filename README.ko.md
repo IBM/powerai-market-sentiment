@@ -62,7 +62,7 @@ PowerAI Cognitive 코드 패턴 및 플래폼을 체험하기 위해 Nimbix에 �
 
 ![](doc/source/images/launchtrialbutton.jpg)
 
-아래 화면처럼 **Welcome to IBM PowerAI Trial** 페이지는 Trial에 접근하기 위한 가이드를 제공합니다. 또는 귀하가 Trial을 시작할 수 있도록 유사한 가이드가 등록을 컨펌하는 이메일로 전달됩니다. 
+아래 화면처럼 **Welcome to IBM PowerAI Trial** 페이지는 Trial에 접근하기 위한 가이드를 제공합니다. 또는 귀하가 Trial을 시작할 수 있도록 유사한 가이드가 등록을 컨펌하는 이메일로 전달됩니다.
 
 ![](doc/source/images/welcomepage.jpg)
 
@@ -110,7 +110,7 @@ git clone https://github.com/IBM/powerai-notebook
 * 한번에 하나의 셀을 실행
   * 셀을 선택하고 툴바에 있는 `Play` 버튼을 클릭합니다.
 * 순서대로 배치 모드로 실행
-  * `Cell` 메뉴바에 몇가지 옵션이 있습니다. 예를들어, `Run All` 옵션으로 노트북에 있는 모든 셀을 실행시킬 수 있습니다. `Run All Below` 옵션으로 현재 선택된 첫번째 셀부터 실행하고 다음 계속되는 모든 셀을 계속 실행할 수 있습니다. 
+  * `Cell` 메뉴바에 몇가지 옵션이 있습니다. 예를들어, `Run All` 옵션으로 노트북에 있는 모든 셀을 실행시킬 수 있습니다. `Run All Below` 옵션으로 현재 선택된 첫번째 셀부터 실행하고 다음 계속되는 모든 셀을 계속 실행할 수 있습니다.
 
 참조:
 
